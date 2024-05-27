@@ -1,0 +1,84 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+
+    background: linear-gradient(45deg, #cbc2eb, #d5f5d1);
+	animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+    /*Quando só tem um elemento na página, você poderá centralizá-lo assim*/
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-size: 1.6rem;
+}
+
+main {
+    background: white;
+    width: min(43.0rem, 90%);
+    border-radius: .5rem;
+    box-shadow: 0 2.0rem 3.0rem #5f5f5f;
+    padding: 5.8rem 1.4rem 3.4rem 1.4rem;
+    margin-top: -15.0rem; /*Para subir um pouquinho e não ficar todo ao centro da tela*/
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 3.0rem;
+    color: cadetblue;
+    padding-bottom: 2rem;
+    text-decoration: underline;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(21, 123, 170);
+    font-weight: 400;
+    line-height: 2.6rem; 
+    padding-top: 2rem;    
+}
+
+input {
+    width: 90%; /* Defina uma largura fixa para centralização */
+    max-width: 25rem; /* Largura máxima para inputs */
+    padding: 1rem;
+    background-color: rgba(250, 235, 215, 0.486);
+    border-radius: .5rem;
+    margin-top: 1rem; /* Espaçamento entre inputs */
+    text-align: center; /* Centraliza o texto dentro do input */
+}
+
+button {
+    border: none;
+    width: 17.4rem;
+    height: 5.2rem;
+    background-color: #69a58786;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #fbff00;
+    border-radius: .4rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+    padding: 1.2rem;     
+}
+
+button:hover {
+    filter:saturate(.20);
+}

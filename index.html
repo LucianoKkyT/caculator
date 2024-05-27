@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste DOM</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <main class="card" id="calcForm">
+            <form class="input-wrapper" >
+                <h1>Calculadora</h1>
+                <label for="num1">Digite um número:</label>
+                <input type="number" id="num1" required>
+                <label for="num2">Digite outro número:</label>
+                <input type="number" id="num2" required>
+                <label for="operation">Digite a operação que você quer fazer:</label>
+                <input type="text" id="operation" required pattern="[+\-*/]">
+
+                <button class="handleClick">Clique para calcular</button>
+            </form>
+
+        </main>
+    </div>
+    
+    
+    <script src="./main.js"></script>
+</body>
+</html>
